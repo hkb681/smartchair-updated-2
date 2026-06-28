@@ -1,0 +1,10 @@
+.footer{background:var(--dark);color:rgba(255,255,255,0.7);padding:50px 5% 24px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.col h4{color:white;font-family:var(--font-head);font-size:0.9rem;font-weight:700;margin-bottom:16px}
+.col p,.col a{font-size:0.85rem;line-height:2;color:rgba(255,255,255,0.65);text-decoration:none;display:block;cursor:pointer}
+.col a:hover{color:white}
+.socialRow{display:flex;gap:10px;margin-top:4px}
+.socialBtn{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:white;font-size:0.75rem;font-weight:700;cursor:pointer;transition:background .2s}
+.socialBtn:hover{background:var(--blue)}
+.bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;text-align:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
+@media(max-width:768px){.grid{grid-template-columns:1fr}}

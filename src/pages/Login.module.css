@@ -1,0 +1,31 @@
+.page{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 64px)}
+.left{background:var(--blue);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:60px 8%;color:white}
+.left::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 60% 40%,rgba(255,255,255,0.08) 0%,transparent 60%)}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:40px;position:relative;z-index:1}
+.brandIcon{width:48px;height:48px;border-radius:10px;background:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.2rem;color:var(--blue);font-family:var(--font-head)}
+.brand span{font-family:var(--font-head);font-weight:700;font-size:1.3rem}
+.left h2{font-family:var(--font-head);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;line-height:1.2;margin-bottom:16px;position:relative;z-index:1}
+.left p{opacity:0.85;line-height:1.6;font-size:0.95rem;position:relative;z-index:1}
+.right{background:var(--gray-light);display:flex;align-items:center;justify-content:center;padding:40px}
+.card{background:white;border-radius:16px;padding:36px;width:100%;max-width:420px;box-shadow:0 4px 24px rgba(0,0,0,0.06)}
+.tabToggle{display:grid;grid-template-columns:1fr 1fr;background:var(--gray-light);border-radius:10px;padding:4px;margin-bottom:28px}
+.tab{padding:10px;border-radius:8px;border:none;cursor:pointer;font-size:0.9rem;font-weight:600;font-family:var(--font-body);transition:background .2s,color .2s;background:transparent;color:var(--gray)}
+.activeTab{background:var(--blue);color:white}
+.cardTitle{font-family:var(--font-head);font-size:1.4rem;font-weight:700;margin-bottom:6px}
+.cardSub{font-size:0.875rem;color:var(--gray);margin-bottom:24px}
+.inputWrap{position:relative}
+.forgotRow{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.rememberLabel{display:flex;align-items:center;gap:8px;font-size:0.85rem;cursor:pointer}
+.forgotLink{color:var(--blue);font-size:0.85rem;font-weight:600;background:none;border:none;cursor:pointer;font-family:var(--font-body)}
+.orDivider{display:flex;align-items:center;gap:12px;margin:18px 0}
+.orDivider::before,.orDivider::after{content:'';flex:1;height:1px;background:var(--gray-border)}
+.orDivider span{font-size:0.8rem;color:var(--gray)}
+.socialRow{display:flex;justify-content:center;gap:12px;margin-bottom:20px}
+.socialBtn{border:1px solid var(--gray-border);border-radius:8px;padding:10px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:0.875rem;font-weight:500;background:white;cursor:pointer;transition:background .2s;font-family:var(--font-body)}
+.socialBtn:hover{background:var(--gray-light)}
+.backLink{display:flex;align-items:center;justify-content:center;gap:6px;color:var(--blue);font-size:0.875rem;font-weight:600;cursor:pointer;background:none;border:none;font-family:var(--font-body);width:100%}
+.errorMsg{color:#DC2626;font-size:0.82rem;margin-bottom:12px;background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:8px 12px}
+.successBox{text-align:center;padding:40px 0}
+.successBox h4{font-family:var(--font-head);margin-bottom:8px}
+.successBox p{color:var(--gray);font-size:0.9rem}
+@media(max-width:768px){.page{grid-template-columns:1fr}.left{display:none}}

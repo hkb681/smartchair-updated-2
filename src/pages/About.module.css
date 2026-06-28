@@ -1,0 +1,13 @@
+.missionWrap{max-width:720px;margin:0 auto;text-align:center;margin-bottom:48px}
+.missionText{color:var(--gray);line-height:1.8;font-size:1rem}
+.statsGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:60px}
+.statCard{text-align:center;padding:32px 20px;background:var(--blue-light);border-radius:16px}
+.statNum{font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--blue);margin-bottom:8px}
+.statLabel{color:var(--gray);font-weight:500}
+.storyGrid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.subHeading{font-family:var(--font-head);font-weight:700;font-size:1.2rem;margin-bottom:16px}
+.bodyText{color:var(--gray);line-height:1.8;font-size:0.95rem}
+.valuesList{list-style:none}
+.valuesList li{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:0.9rem}
+.checkMark{color:var(--blue);font-weight:700}
+@media(max-width:768px){.statsGrid{grid-template-columns:1fr}.storyGrid{grid-template-columns:1fr}}
