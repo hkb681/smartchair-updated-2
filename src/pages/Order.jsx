@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import Footer from '../components/Footer';
 import Icon, { icons } from '../components/Icon';
 import styles from './Order.module.css';
-
+emailjs.init(EMAILJS_PUBLIC_KEY);
 // ── EmailJS Keys ──────────────────────────────────────────────
 const EMAILJS_SERVICE_ID  = 'service_2ydl8is';
 const EMAILJS_TEMPLATE_ID = 'template_2l7ab5c';
@@ -189,8 +189,12 @@ const Order = ({ setPage }) => {
 
         {/* Email confirmation notice */}
         <div className={styles.emailNotice}>
-          📧 A confirmation email has been sent to <strong>{email}</strong>
-        </div>
+  📧 A confirmation email has been sent to <strong>{email}</strong>
+  <br/>
+  <span style={{fontSize:'0.8rem', color:'#64748B'}}>
+    ⚠️ If you don't see it, please check your Spam/Junk folder and mark it as "Not Spam"
+  </span>
+</div>
 
         <div className={styles.successDetails}>
           <div className={styles.successRow}><span>Product</span><span>{PRODUCT.name}</span></div>
